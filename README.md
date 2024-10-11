@@ -1,2 +1,61 @@
-# groupie-tracker-search-bar
-Groupie tracker website with the search functionality fully functioning
+# Groupie Tracker Visualizations
+
+Groupie Trackers is a web application designed to empower music enthusiasts by providing a user-friendly platform to explore and track their favorite bands and artists. Groupie Tracker visualizations now incorporates styling the website.
+
+## Key Features
+
+- API Integration: Fetches artist, location, and concert date data from the provided API.
+Artist Information: Displays comprehensive details about artists, including band names, member lists, year of origin, and first album release date.
+- Concert Listings: Presents upcoming and past concert dates and locations, potentially incorporating map visualizations for an enhanced user experience.
+- Data Visualization: Utilizes various data visualization techniques (e.g.tables) to present information in a clear and intuitive manner. User interface elements can be customized based on your preferences.
+- Client-Server Interaction: Implements a client-server communication mechanism for specific features you choose to develop. This might involve requesting additional information from the server based on user actions or other events.
+
+## Shortcuts
+
+The project below has implemented the use of shortcuts which include:
+- Alt+h: This shortcut returns the user back to the homepage each time the user uses the shortcut keys while on another page other than the homepage e.g. When the user has encountered an error page, the user can use the shortcut keys to direct back to the homepage. 
+
+## Technical Considerations
+
+- Backend Language: this project uses go programming language for the backened.
+
+- Frontend Technologies: this project uses HTML and CSS for building the user interface and handling user interactions.
+
+## Project Setup
+
+To access the web page clone the repository using the link below;
+```bash
+git clone https://github.com/JosephOkumu/Groupie-tracker-visualizations
+```
+Go to the project directory
+```bash
+cd groupie-tracker-visualizations
+```
+When on the working directory run the command below on your terminal to start the server;
+```bash
+go run .
+```
+Go to a web browser of your choice and get the web page by searching the url below;
+```bash
+localhost:8080
+```
+
+## Contribution Guidelines (if applicable)
+- Fork the Repository: If you intend to contribute changes, fork the repository from github to create your own copy.
+
+- Branching Strategy: Create a new branch for your specific development work to avoid conflicts with the main branch.
+
+- Pull Requests: When ready, submit a pull request to propose merging your changes back into the main repository.
+
+
+## Authors
+This project was done by:
+
+[@jkuya](https://github.com/jesee-kuya) 
+
+[@josotieno](https://github.com/josephokumu)
+
+[@weakinyi](https://github.com/Wendy-Tabitha)
+
+## LICENSE
+This project is licensed under the terms of the [MIT License](./LICENSE).

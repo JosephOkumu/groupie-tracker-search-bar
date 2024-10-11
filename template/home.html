@@ -1,0 +1,36 @@
+{{ define "home" }}
+<html>
+
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <section class="hero">
+        <img src="/static/images/Groupie1Cropd.jpeg" alt="Concert crowd with spectacular light show" class="hero-image">
+        <div class="hero-content">
+            <h1>Artists</h1>
+        </div>
+    </section>
+    <main name="index">
+        <div class="artists-grid">
+            {{ range . }}
+            <div class="artist-card">
+                <a href="/artist?id={{.Id}}" class="artist-link-overlay"></a>
+                <img src="{{ .Image }}" alt="{{ .Name }}">
+                <h3>{{ .Name }}</h3>
+                <p>Creation Date: {{ .CreationDate }}</p>
+                <p>First Album: {{ .FirstAlbum }}</p>
+                <div class="artist-links">
+                    <a href="/location?id={{.Id}}" class="artist-link">Locations</a>
+                    <a href="/dates?id={{.Id}}" class="artist-link">Dates</a>
+                    <a href="/relations?id={{.Id}}" class="artist-link">Relations</a>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </main>
+</body>
+
+</html>
+{{ end }}
